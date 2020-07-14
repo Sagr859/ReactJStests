@@ -18,7 +18,7 @@ function  App(){
         <Row sm={4}>
           <Container >
               <Row>
-                <TopNews />
+              <TopNews />
               </Row>
               
           </Container>
@@ -27,7 +27,7 @@ function  App(){
           </Container>
         </Row>
         <Row sm={2}>
-          <FeaturedNews />
+         <FeaturedNews />
         </Row>
       </Container>
     </div>
