@@ -1,43 +1,44 @@
 import React from 'react';
-import {Container, Row, Col, Card, Button} from 'react-bootstrap';
-import news from '../services/news';
+import {Container, Row, Col, Card, Button, Image, Carousel} from 'react-bootstrap';
+import news from '../news.json';
 import img from '../2673291.jpg';
+
+
+
 const FeaturedNews = () => {
     return (
         <Container>
-            <Row>
-            <Button variant="success">Featured News</Button>
-            </Row>
-            <Row>
-                <Col>
-                    <Card id ={news.id} style={{ width: '18rem' }} className="justify-md-centre">
-                        <Card.Img variant="top" src={img} />
-                            <Card.Body>
-                                <Card.Title>{news.title}</Card.Title>
-                                    <Card.Text></Card.Text>
-                            </Card.Body>
-                    </Card>
-                </Col>
-                <Col>
-                <Card id ={news.id} style={{ width: '18rem' }} className="justify-md-centre">
-                        <Card.Img variant="top" src={img} />
-                            <Card.Body>
-                                <Card.Title>{news.title}</Card.Title>
-                                    <Card.Text></Card.Text>
-                            </Card.Body>
-                    </Card>
-                </Col>
-                <Col>
-                <Card id ={news.id} style={{ width: '18rem' }} className="justify-md-centre">
-                        <Card.Img variant="top" src={img} />
-                            <Card.Body>
-                                <Card.Title>{news.title}</Card.Title>
-                                    <Card.Text></Card.Text>
-                            </Card.Body>
-                    </Card>
-                </Col>
+            <Card style={{ width: '50rem' }} className="text-center mt-4 mb-4">
+                <Card.Header>
+                    <Row>
+                    <Button variant="success">Featured News</Button>
+                    </Row>
+                </Card.Header>
+                     <Row>
+                     <Carousel style={{ width: '60rem'}} className="text-center mt-4 mb-4">   
+                        { news.map((n,i) => {
 
-            </Row>
+                            return (
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            style={{ width: '40rem', height:'20rem'}}
+                                            src={n.urlToImage}
+                                        />
+                                        <Carousel.Caption>
+                                            <h3>{n.title}</h3>
+                                            <p>{n.description}</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                               
+                            );
+                    }
+                    )}
+                    </Carousel>  
+                    </Row>
+                </Card>
+
+            
         </Container>
             );
 };
