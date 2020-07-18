@@ -1,44 +1,109 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import "./NavBar.css";
+
+
 const CustomNavbar = () =>{
     return (
-        <Navbar bg="light" expand="lg">
-            
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
-                        
-                            <NavDropdown title="District1" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="District2" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="District3" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="District4" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="District5" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            </NavDropdown>
-                            
-                        </Nav>
     
-  </Navbar.Collapse>
-</Navbar>
-    )
-}
+        
+        <nav className="containerNav wrapper">
+            <ul>
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>
+                <li id="linkhead"> | </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>
+                <li id="linkhead"> | </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>
+                <li id="linkhead"> | </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>
+                <li id="linkhead"> | </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>
+                <li id="linkhead"> | </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>
+                <li id="linkhead"> | </li>           
+                <li id="linkhead"><a>  District   </a>
+                    <ul className="dropdown">
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                        <li className="sub-text"><a>Place</a></li>
+                    </ul>        
+                </li>           
+                
+            </ul>
+        </nav>
+        
+   
+        );
+};
 
 export default CustomNavbar;
